@@ -1,4 +1,4 @@
-from markfile.HeadingRule import HeadingRule
+from src.markfile import HeadingRule
 
 
 class TitleRule(HeadingRule):

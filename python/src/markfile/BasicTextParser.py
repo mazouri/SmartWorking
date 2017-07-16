@@ -1,9 +1,9 @@
-from markfile.HeadingRule import HeadingRule
-from markfile.ListItemRule import ListItemRule
-from markfile.ListRule import ListRule
-from markfile.ParagraphRule import ParagraphRule
-from markfile.Parser import Parser
-from markfile.TitleRule import TitleRule
+from src.markfile import HeadingRule
+from src.markfile import ListItemRule
+from src.markfile import ListRule
+from src.markfile import ParagraphRule
+from src.markfile import Parser
+from src.markfile import TitleRule
 
 
 class BasicTextParser(Parser):

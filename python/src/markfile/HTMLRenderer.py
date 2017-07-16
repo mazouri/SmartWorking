@@ -1,4 +1,4 @@
-from markfile.Handler import Handler
+from src.markfile import Handler
 
 
 class HTMLRenderer(Handler):

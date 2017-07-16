@@ -1,7 +1,9 @@
 #!/Library/Frameworks/Python.framework/Versions/3.6/bin/python3
 import sys
-from markfile.BasicTextParser import BasicTextParser
+
 from markfile.HTMLRenderer import HTMLRenderer
+
+from src.markfile.BasicTextParser import BasicTextParser
 
 if __name__ == '__main__':
     handler = HTMLRenderer()#定义渲染类

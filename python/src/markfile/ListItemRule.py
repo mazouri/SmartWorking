@@ -1,4 +1,4 @@
-from markfile.Rule import Rule
+from src.markfile import Rule
 
 
 class ListItemRule(Rule):
