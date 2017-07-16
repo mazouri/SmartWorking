@@ -8,6 +8,8 @@
 
 [NDK下载](http://developer.android.com/ndk/downloads/index.html#download)
 
+[Gragle下载](http://services.gradle.org/distributions)
+
 ## 配置说明文档
 [Mac下配置Android开发环境](http://www.jianshu.com/p/dcf5675c8a9e)
 
