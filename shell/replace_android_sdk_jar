@@ -1,0 +1,17 @@
+#!/bin/bash
+
+rm temp/ -rf
+mkdir temp
+cp
+~/workspace/{platform}/out/target/common/obj/JAVA_LIBRARIES/framework_in
+termediates/classes.jar .
+cp /opt/sdk/platforms/android-25/android.jar  .
+unzip android.jar -d temp/
+unzip -o -d temp/ classes.jar 
+
+cd temp
+zip -r android-new.zip *
+cd ..
+mv temp/android-new.zip android.jar
+
+sudo mv android.jar /opt/sdk//platforms/android-25/android.jar
