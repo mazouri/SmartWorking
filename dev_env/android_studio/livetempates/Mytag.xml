@@ -1,0 +1,217 @@
+<templateSet group="Mytag">
+  <template name="spgetl" value="Tools.sp().getShareLong(SPConstants.$tag$);" description="getShareLong" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="spsl" value="Tools.sp().saveShareLong(SPConstants.$tag$, );" description="saveShareLong" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logd" value="Tools.log().d(TAG, $tag$);" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="loge" value="Tools.log().e(TAG, $tag$);" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="appcontext" value="MazouriApp.getApplication()" description="MazouriApp.getApplication()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="netconnect" value="Tools.network().isNetworkConnected(this)" description="isNetworkConnected" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tag" value="private static final java.lang.String TAG = $classname$.class.getSimpleName();" toReformat="false" toShortenFQNames="true">
+    <variable name="classname" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="spgets" value="Tools.sp().getShareString(SPConstants.$tag$);" description="getShareString" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="spss" value="Tools.sp().saveShareString(SPConstants.$tag$, );" description="saveShareString" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="psfs" value="public static final String $tag$ = &quot;&quot;;" description="public static final String" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="psfi" value="public static final int $tag$ = 0;" description="public static final int" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="psfl" value="public static final long $tag$ = 0;" description="public static final long" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="isnull" value="Tools.string().isEmpty($tag$)" description="isEmpty" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logdd" value="Tools.log().d" description="Tools.log().d" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logee" value="Tools.log().e" description="Tools.log().e" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="obs" value="public ObservableField&lt;String&gt; place = new ObservableField&lt;&gt;();" description="ObservableField&lt;String&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="obi" value="public ObservableField&lt;Integer&gt; place = new ObservableField&lt;&gt;();" description="ObservableField&lt;Integer&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="obb" value="public ObservableField&lt;Boolean&gt; place = new ObservableField&lt;&gt;();" description="ObservableField&lt;Boolean&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="instance" value="private static $classname$ sInstance = null;&#10;&#10;public static $classname$ getInstance() {&#10;    if (sInstance == null)&#10;        sInstance = new $classname$();&#10;    return sInstance;&#10;}&#10;&#10;public $classname$() {&#10;    $content$&#10;}" description="Single instance" toReformat="false" toShortenFQNames="true">
+    <variable name="classname" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logger" value="private LetvLogHelper sLogger = LetvLogHelper.getLogger($classname$.class.getSimpleName());" description="LetvLogHelper.getLogger" toReformat="false" toShortenFQNames="true">
+    <variable name="classname" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="todo" value="//TODO $content$" description="//TODO" toReformat="false" toShortenFQNames="true">
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="construct" value="    public $class_name$(Context context) {&#10;        this(context, null);&#10;    }&#10;&#10;    public $class_name$(Context context, AttributeSet attrs) {&#10;        this(context, attrs, 0);&#10;    }&#10;&#10;    public $class_name$(Context context, AttributeSet attrs, int defStyleAttr) {&#10;        super(context, attrs, defStyleAttr);&#10;&#10;        TypedArray a = context.obtainStyledAttributes(&#10;                attrs, R.styleable.$class_name$, 0, 0);&#10;&#10;        try {&#10;&#10;        } finally {&#10;            a.recycle();&#10;        }&#10;    }" description="construct" toReformat="false" toShortenFQNames="true">
+    <variable name="class_name" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logdi" value="Tools.log().d(TAG, &quot;tag : &quot; + $tag$);" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logdii" value="Tools.log().d(TAG, &quot;tag1 : &quot; + tag1 + &quot;, tag2 : &quot; + tag2);" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="li" value=" + &quot;, tag : &quot; + tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="try-catch" value="        try {&#10;            $tag$&#10;        } catch (Exception e) {&#10;            e.printStackTrace();&#10;        }" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="@" value="@{$tag$}" description="@{$tag$}" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="toast" value="Tools.toast().showToast($tag$);" description="Tools.toast().showToast();" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="divide" value="/******************** $tag$ start ***********************/&#10;    $tag2$&#10;/******************** $tag$ end ***********************/" description="/******/" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="tag2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="method" value="public void $methodName$() {&#10;    $tag$&#10;}" description="public void method() {}" toReformat="false" toShortenFQNames="true">
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ifelse" value="if ($tag$) {&#10;    $tag$&#10;} else {&#10;    &#10;}" description="if () {} else {}" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="else" value=" else {&#10;    $tag$&#10; }" description="else {}" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="test" value="//@test" description="//@test" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fboolean" value="private boolean $tag$;" description="private boolean bFeild;" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fstring" value="private String $tag$;" description="private String sFeild;" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fint" value="private int $tag$;" description="private int iFeild;" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="handler" value="private Handler mHandler = new Handler() {&#10;    @Override&#10;    public void handleMessage(Message msg) {&#10;        $tag$&#10;    }&#10;};" description="private Handler mHandler = new Handler()" toReformat="false" toShortenFQNames="true">
+    <variable name="tag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
